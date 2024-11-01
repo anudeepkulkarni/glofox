@@ -1,0 +1,31 @@
+Unit Tests
+
+Test Case ID	Description						Expected Outcome
+TC-001	Test creation of a valid class					Class is added successfully
+TC-002	Test creation of a class with empty name			Throws ClassCreationException
+TC-003	Test creation of a class with invalid dates			Throws ClassCreationException
+TC-004	Test booking for a valid class					Booking is added successfully
+TC-005	Test booking for a class with empty member name			Throws BookingException
+
+Integration Tests
+
+Test Case ID	Description						Expected Outcome
+ITC-001	Test interaction between ClassController and ClassService	Class is created and stored correctly
+ITC-002	Test interaction between BookingController and BookingService	Booking is created and linked to the class
+
+End-to-End Tests
+
+Test Case ID		Description					Expected Outcome
+E2E-001	Test creating a class and booking a session	        	Class is created and booking is confirmed
+E2E-002	Test retrieving all classes and bookings	        	All classes and bookings are returned correctly
+
+
+Performance Test Cases
+
+Test Case ID	Description	 					Metrics to Measure
+PT-001	Load testing with 100 concurrent users				Response time, throughput, error rate
+PT-002	Stress testing with 500 concurrent users			Maximum load capacity, system stability
+PT-003	Endurance testing over 1 hour with 100 users			Memory usage, CPU usage, response time
+
+
+Kindly note the above document is part of the planning and project execution.
